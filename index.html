@@ -9,10 +9,30 @@
   </head>
 
   <body>
-    We're coming soon
-    Hello fellow shoppers! We're currently building our new fashion store. 
-    Add your email below to stay up-to-date with announcements and our launch deals.
-    Email Address
+    <header class="header">
+      <img src="./images/logo.svg" alt="Base apparel logo" class="header__logo">
+    </header>
+
+    <div class="hero">
+      <img src="./images/hero-mobile.jpg" alt="A girl in front of plants" class="hero__img">
+    </div>
+
+    <main class="main">
+      <h1 class="main__title">We're <i class="main__title__highlight">coming soon</i></h1>
+
+      <p class="main__paragraph">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+
+      <form class="main__form">
+        <input type="text" name="email" class="main__form__input" placeholder="Email Address">
+      </form>
+
+      <div class="main__info-msg">
+        <p class="main__info-msg__text">Please provide a valid email</p>
+      </div>
+    </main>
 
     <script src="./app.js"></script>
   </body>

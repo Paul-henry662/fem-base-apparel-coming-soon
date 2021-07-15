@@ -1,2 +1,11 @@
 //Frontend Mentor base apparel coming soon challenge -> _buttons.scss
 //Partial scss file for reset rules.
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}

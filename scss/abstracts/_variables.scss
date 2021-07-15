@@ -16,7 +16,7 @@ $btnGradient: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 
 //#------------------------------Typography---------------------------------------
 //## Font stack
-$fontStack: "Josefin", sans-serif;
+$fontStack: "Josefin Sans", sans-serif;
 
 //## Sizes
 $fontSizes: (
@@ -30,4 +30,8 @@ $fontWeights: (
   regular: 400,
   semiBold: 600,
 );
+
+//## Default fontRule
+$defaultFontRule: map-get($fontWeights, regular) map-get($fontSizes, paragraph)
+  $fontStack;
 //#------------------------------/Typography---------------------------------------

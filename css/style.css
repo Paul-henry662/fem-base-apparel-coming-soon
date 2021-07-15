@@ -16,4 +16,48 @@
   display: inline;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main * {
+  font: 400 1rem "Josefin Sans", sans-serif;
+  color: #ce9797;
+}
+
+body {
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 1fr 250px 5fr;
+}
+
+.header {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-left: 8%;
+  max-width: 28%;
+  min-width: 7rem;
+}
+
+.hero {
+  background: lightgoldenrodyellow;
+  overflow: hidden;
+}
+.hero__img {
+  min-width: 100%;
+}
+
+.main {
+  background: lightseagreen;
+}
+
 /*# sourceMappingURL=style.css.map */

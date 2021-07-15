@@ -1,0 +1,33 @@
+//Frontend Mentor base apparel coming soon challenge -> _variables.scss
+//Partial scss file for variables.
+
+//#------------------------------Colors---------------------------------------
+//## Primary
+$desaturatedRed: hsl(0, 36%, 70%);
+$softRed: hsl(0, 93%, 68%);
+
+//## Neutral
+$darkGrayishRed: hsl(0, 6%, 24%);
+
+//## Gradients
+$bgGradient: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+$btnGradient: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+//#------------------------------/Colors---------------------------------------
+
+//#------------------------------Typography---------------------------------------
+//## Font stack
+$fontStack: "Josefin", sans-serif;
+
+//## Sizes
+$fontSizes: (
+  paragraph: 1rem,
+  heading: 3rem,
+);
+
+//## Weights
+$fontWeights: (
+  light: 300,
+  regular: 400,
+  semiBold: 600,
+);
+//#------------------------------/Typography---------------------------------------

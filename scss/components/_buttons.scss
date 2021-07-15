@@ -1,2 +1,18 @@
 //Frontend Mentor base apparel coming soon challenge -> _buttons.scss
 //Partial scss file for buttons.
+
+@use "../abstracts/variables";
+
+.button {
+  background: variables.$btnGradient;
+  border: none;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
+
+  &:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0.5em 1.8em;
+  }
+}

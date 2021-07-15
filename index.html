@@ -14,7 +14,8 @@
     </header>
 
     <div class="hero">
-      <img src="./images/hero-mobile.jpg" alt="A girl in front of plants" class="hero__img">
+      <img src="./images/hero-mobile.jpg" alt="A girl in front of plants" class="hero__img--mobile">
+      <img src="./images/hero-desktop.jpg" alt="A girl in front of plants" class="hero__img--desktop">
     </div>
 
     <main class="main">
@@ -27,14 +28,16 @@
 
       <form class="main__form" onsubmit="return validateForm()">
         <input type="text" name="email" class="main__form__input" placeholder="Email Address">
+
         <img src="./images/icon-error.svg" alt="exclamation point error icon" class="main__form__error-icon">
-        <button type="submit" class="main__form__button"><img src="./images/icon-arrow.svg" alt="arrow icon"></button>
+        
+        <button type="submit" class="button main__form__button"><img src="./images/icon-arrow.svg" alt="arrow icon"></button>
 
         <div class="main__form__info-msg">
           <p class="main__form__info-msg__text">Please provide a valid email</p>
         </div>
+      </main>
       </form>
-    </main>
 
     <script src="./app.js"></script>
   </body>

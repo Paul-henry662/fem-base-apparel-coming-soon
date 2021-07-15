@@ -2,7 +2,7 @@
 //Main scss file.
 
 //Imports
+@use "./core/all" as core;
 @use "./abstracts/all" as abstracts;
 @use "./components/all" as components;
-@use "./core/all" as core;
 @use "./layout/all" as layout;

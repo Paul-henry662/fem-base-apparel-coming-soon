@@ -1,24 +1,76 @@
 //Frontend Mentor base apparel coming soon challenge -> _form.scss
 //Partial scss file for form.
 
+@use "../abstracts/variables";
+
 .main__form {
-  @at-root .main__form__error-icon {
-    display: none;
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @at-root .main__form__input {
+    min-width: 100%;
+    padding: 0.65em 1em;
+    border-radius: 1.5rem;
+    outline: none;
+    color: variables.$darkGrayishRed;
+    border: 1px solid variables.$desaturatedRed;
+    background: none;
   }
 
   @at-root .main__form__error-icon,
+    .main__form__button,
     .main__form__info-msg {
+    position: absolute;
+  }
+
+  @at-root .main__form__error-icon {
+    transform: translate(-75px, 9px);
     display: none;
+  }
+
+  @at-root .main__form__info-msg {
+    @at-root .main__form__info-msg__text {
+      color: variables.$softRed;
+    }
+
+    display: none;
+    transform: translateY(50px);
   }
 }
 
 .main__form--error {
   .main__form__input {
-    border: 2px solid red;
+    outline: 2px solid variables.$softRed;
   }
 
-  .main__form__error-icon,
-  .main__form__info-msg {
+  .main__form__error-icon {
     display: inline;
+  }
+
+  .main__form__info-msg {
+    display: block;
+  }
+}
+
+.main__form__error-icon--animated {
+  animation: error-animation 0.5s;
+}
+
+@keyframes error-animation {
+  0% {
+    transform: translate(-80px, 9px);
+  }
+  25% {
+    transform: translate(-70px, 9px);
+  }
+  50% {
+    transform: translate(-80px, 9px);
+  }
+  75% {
+    transform: translate(-70px, 9px);
+  }
+  100% {
+    transform: translate(-75px, 9px);
   }
 }

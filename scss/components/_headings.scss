@@ -1,0 +1,22 @@
+//Frontend Mentor base apparel coming soon challenge -> _headings.scss
+//Partial scss file for headings.
+
+@use "../abstracts/variables";
+
+.main__title,
+.main__title * {
+  font-size: map-get(variables.$fontSizes, heading);
+  font-weight: map-get(variables.$fontWeights, light);
+  text-transform: uppercase;
+  letter-spacing: 0.4ch;
+  line-height: 1.75ch;
+
+  @at-root .main__title__highlight {
+    font-weight: map-get(variables.$fontWeights, semiBold);
+    color: variables.$darkGrayishRed;
+  }
+
+  @media (min-width: 868px) {
+    font-size: 4rem;
+  }
+}

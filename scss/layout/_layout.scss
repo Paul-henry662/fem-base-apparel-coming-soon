@@ -1,22 +1,25 @@
 //Frontend Mentor base apparel coming soon challenge -> _buttons.scss
 //Partial scss file for layout rules.
 
+@use "../abstracts/variables";
+
 body {
   display: grid;
   grid-template-columns: none;
   grid-template-rows: 1fr 250px 5fr;
 }
+
 .header {
-  background: lightblue;
   display: flex;
   align-items: center;
 
   @at-root .header__logo {
     margin-left: 8%;
     max-width: 28%;
-    min-width: 7rem;
+    min-width: 5rem;
   }
 }
+
 .hero {
   background: lightgoldenrodyellow;
   overflow: hidden;
@@ -25,6 +28,14 @@ body {
     min-width: 100%;
   }
 }
+
 .main {
-  background: lightseagreen;
+  background: variables.$bgGradient;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+  padding: 0 8%;
+  text-align: center;
 }

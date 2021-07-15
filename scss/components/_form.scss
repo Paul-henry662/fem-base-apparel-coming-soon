@@ -1,0 +1,24 @@
+//Frontend Mentor base apparel coming soon challenge -> _form.scss
+//Partial scss file for form.
+
+.main__form {
+  @at-root .main__form__error-icon {
+    display: none;
+  }
+
+  @at-root .main__form__error-icon,
+    .main__form__info-msg {
+    display: none;
+  }
+}
+
+.main__form--error {
+  .main__form__input {
+    border: 2px solid red;
+  }
+
+  .main__form__error-icon,
+  .main__form__info-msg {
+    display: inline;
+  }
+}

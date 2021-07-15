@@ -25,13 +25,15 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
 
-      <form class="main__form">
+      <form class="main__form" onsubmit="return validateForm()">
         <input type="text" name="email" class="main__form__input" placeholder="Email Address">
-      </form>
+        <img src="./images/icon-error.svg" alt="exclamation point error icon" class="main__form__error-icon">
+        <button type="submit" class="main__form__button"><img src="./images/icon-arrow.svg" alt="arrow icon"></button>
 
-      <div class="main__info-msg">
-        <p class="main__info-msg__text">Please provide a valid email</p>
-      </div>
+        <div class="main__form__info-msg">
+          <p class="main__form__info-msg__text">Please provide a valid email</p>
+        </div>
+      </form>
     </main>
 
     <script src="./app.js"></script>

@@ -1,3 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+.main__form__error-icon {
+  display: none;
+}
+
+.main__form__error-icon,
+.main__form__info-msg {
+  display: none;
+}
+
+.main__form--error .main__form__input {
+  border: 2px solid red;
+}
+.main__form--error .main__form__error-icon,
+.main__form--error .main__form__info-msg {
+  display: inline;
+}
 
 /*# sourceMappingURL=style.css.map */
